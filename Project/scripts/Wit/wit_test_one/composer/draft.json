@@ -1,0 +1,104 @@
+{
+    "name": "draft",
+    "modules": [
+        {
+            "id": "response_1",
+            "point": {
+                "x": 600,
+                "y": 800
+            },
+            "type": "response",
+            "label": "Edit this module \n with your response.",
+            "response_fields": {
+                "text": "Edit me!"
+            }
+        },
+        {
+            "id": "decision_1",
+            "point": {
+                "x": 600,
+                "y": 100
+            },
+            "type": "decision",
+            "label": "Edit this module \n to add your decision \n condition.",
+            "next_modules": [
+                {
+                    "id": "decision_2",
+                    "outcome": "negative",
+                    "incoming_side": "top",
+                    "outgoing_side": "bottom"
+                },
+                {
+                    "id": "response_2",
+                    "outcome": "positive",
+                    "incoming_side": "left",
+                    "outgoing_side": "right"
+                }
+            ]
+        },
+        {
+            "id": "input_1",
+            "point": {
+                "x": 100,
+                "y": 100
+            },
+            "type": "input",
+            "label": "Input",
+            "next_modules": [
+                {
+                    "id": "decision_1",
+                    "outcome": "single",
+                    "incoming_side": "left",
+                    "outgoing_side": "right"
+                }
+            ]
+        },
+        {
+            "id": "response_2",
+            "point": {
+                "x": 1100,
+                "y": 100
+            },
+            "type": "response",
+            "label": "Edit this module \n with your response.",
+            "response_fields": {
+                "text": "Edit me!"
+            }
+        },
+        {
+            "id": "response_3",
+            "point": {
+                "x": 1100,
+                "y": 450
+            },
+            "type": "response",
+            "label": "Edit this module \n with your response.",
+            "response_fields": {
+                "text": "Edit me!"
+            }
+        },
+        {
+            "id": "decision_2",
+            "point": {
+                "x": 600,
+                "y": 450
+            },
+            "type": "decision",
+            "label": "Edit this module \n to add your decision \n condition.",
+            "next_modules": [
+                {
+                    "id": "response_1",
+                    "outcome": "negative",
+                    "incoming_side": "top",
+                    "outgoing_side": "bottom"
+                },
+                {
+                    "id": "response_3",
+                    "outcome": "positive",
+                    "incoming_side": "left",
+                    "outgoing_side": "right"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "utterances": [
+        {
+            "text": "how are glacier caves formed?",
+            "entities": [],
+            "traits": [],
+            "intent": "glacier_cave"
+        }
+    ]
+}

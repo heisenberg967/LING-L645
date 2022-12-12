@@ -1,0 +1,7 @@
+{
+    "version": 20200513,
+    "zip-command": "zip wit_test_one.zip wit_test_one\/app.json wit_test_one\/entities\/*.json wit_test_one\/intents\/*.json wit_test_one\/traits\/*.json wit_test_one\/utterances\/*.json wit_test_one\/composer\/*.json",
+    "name": "wit_test_one",
+    "lang": "en",
+    "timezone": "America\/Los_Angeles"
+}
