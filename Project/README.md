@@ -1,18 +1,18 @@
 # Comparison of NLU Services on QnA Datasets
 
 ## Contents
-1. Background
-2. Motivation
-3. Similar Works
-4. Project Overview
-5. Datasets
-6. NLU Services
-7. Evaluation
-8. Approach
-9. Results
-10. Conclusion
-11. Future Scope
-12. References
+1. [Background](#background)
+2. [Motivation](#motivation)
+3. [Similar Works](#similar-works)
+4. [Project Overview](#project-overview)
+5. [Datasets](#datasets)
+6. [NLU Services](#nlu-services)
+7. [Evaluation](#evaluation)
+8. [Approach](#approach)
+9. [Results](#results)
+10. [Conclusion](#conclusion)
+11. [Future Scope](#future-scope)
+12. [References](#references)
 
 ## Background
 
@@ -20,7 +20,8 @@ Before we dive into the project specifics, let's build some context so we know w
 
 A place to start perhaps is by talking a little bit about **chatbots**. Now, though chatbots aren't new and have been there since the days of [ELIZA](https://en.wikipedia.org/wiki/ELIZA), they've rapidly grown in terms of commercial use in the last few years. The next time you try reaching out to a customer support personel on Amazon or Uber or most applications, you're routed to essentially a chatbot that acts as your human-like customer support personel.
 
-So, now let's talk about what a chatbot entails on a high level. The diagram below illustrates how the aforementioned Amazon chatbot might operate:
+So, now let's talk about what a chatbot entails on a high level. The diagram below illustrates how the aforementioned Amazon chatbot might operate: <br>
+
 ![Chatbot Architecture](./assets/chatbotArch.png)
 
 When the user asks "I need an update on my order #OrderNumber", the bot uses NLU to breakdown this *utterance* into an intent and capture any entities present within the utterance. So, if we'd trained our model to detect this utterance as belonging to an *OrderStatus* intent and had an NER model that captures the entity *OrderNumber*, the bot would then fulfill the user's request by generating (NLG) an appropriate response.
@@ -143,13 +144,20 @@ A total of 30 intents (excl. fallback) were trained, utterances ranging from 5 t
 
 Here's how each NLU service performed:
 
+#### CLU
+
 ![CLU Quizbowl Results](./assets/clu_result_quizbowl.png)
 
+#### Dialogflow
+
 ![Dialogflow Quizbowl Results](./assets/dialogflow_result_quizbowl.png)
+
+#### LEX
 
 ![Lex Quizbowl Results](./assets/lex_result_quizbowl.png)
 
 Here's a snapshot of how the results varied across a few intents based on the results obtained for Microsoft CLU.
+
 ![Quizbowl Intent Metrics](./assets/intent_metrics_quizbowl.png)
 
 ### Wiki Dataset
@@ -158,13 +166,20 @@ A total of 114 intents (excl. fallback) were trained, with a pretty balanced ran
 
 Here's how each NLU service performed:
 
+#### CLU
+
 ![CLU Wiki Results](./assets/clu_result_wiki.png)
 
+#### Dialogflow
+
 ![Dialogflow Wiki Results](./assets/dialogflow_result_wiki.png)
+
+#### LEX
 
 ![Lex Wiki Results](./assets/lex_result_wiki.png)
 
 Here's a snapshot of how the results varied across a few intents based on the results obtained for Microsoft CLU.
+
 ![Wiki Intent Metrics](./assets/intent_metrics_wiki.png)
 
 
